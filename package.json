@@ -1,0 +1,20 @@
+{
+  "name": "fipe-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "marcas": "node scripts/1-buscarMarcas.js",
+    "modelos": "node scripts/2-buscarModelos.js",
+    "detalhes": "node scripts/3-buscarDetalhes.js",
+    "update-fipe": "node scripts/updateFipe.js",
+    "init-db": "node db/database.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sql.js": "^1.10.3",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.5",
+    "dotenv": "^16.4.1"
+  }
+}
